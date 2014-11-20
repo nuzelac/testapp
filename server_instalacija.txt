@@ -1,0 +1,5 @@
+1. instalirao droplet na digitaloceanu s dokku templateom
+2. instalacija mongodb plugina za dokku
+       - git clone https://github.com/jeffutter/dokku-mongodb-plugin.git /var/lib/dokku/plugins/mongodb
+       - dokku plugins-install
+
