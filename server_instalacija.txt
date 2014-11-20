@@ -1,5 +1,28 @@
-1. instalirao droplet na digitaloceanu s dokku templateom
+1. instalirati droplet s dokku templateom, konfigurirati na web sajtu
 2. instalacija mongodb plugina za dokku
+
+   # https://github.com/jeffutter/dokku-mongodb-plugin
+
+   na serveru:
        - git clone https://github.com/jeffutter/dokku-mongodb-plugin.git /var/lib/dokku/plugins/mongodb
        - dokku plugins-install
+       - dokku mongodb:start
+       - dokku mongodb:list
+       - dokku mongodb:create testapp
 
+   # Now if you push your app again, you will have the following ENV variables:
+
+	 # MONGODB_DATABASE
+	 # MONGODB_HOST
+	 # MONGODB_PORT
+	 # MONGODB_USERNAME
+	 # MONGODB_PASSWORD
+	 # MONGO_URL
+	 # MONGO_URI
+
+3. lokalno na kompu:
+
+  - git remote add remote_name dokku@your_domain.com:name_to_give_your_app
+    # name_to_give_your_app - mora biti isti kao baza da dobije ENV varijable
+
+    
