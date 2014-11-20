@@ -9,7 +9,7 @@ def hello():
 
 @app.route("/env")
 def env():
-	return os.getenv("MONGODB_URL", "tralal")
+	return os.getenv("MONGO_URL", "tralal")
 
 if __name__ == "__main__":
 	app.run()
