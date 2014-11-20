@@ -5,6 +5,10 @@ app = Flask(__name__)
 def hello():
 	return "Hello World!"
 
+@app.route("/env")
+def env():
+	return MONGO_URL
+
 if __name__ == "__main__":
 	app.run()
 
