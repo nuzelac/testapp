@@ -15,6 +15,10 @@ def env():
 def nino():
 	return "ja sam nino!"
 
+@app.route("/luka")
+def nino():
+	return "ja nisam nino!"
+
 if __name__ == "__main__":
 	app.run()
 
