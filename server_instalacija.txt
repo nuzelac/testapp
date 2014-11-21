@@ -25,4 +25,8 @@
   - git remote add remote_name dokku@your_domain.com:name_to_give_your_app
     # name_to_give_your_app - mora biti isti kao baza da dobije ENV varijable
 
-    
+  - git push do master
+
+- aplikacija svaki put kad se restarta ima novi port :/
+- python 2.7
+
