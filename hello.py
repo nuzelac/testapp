@@ -16,7 +16,7 @@ def nino():
 	return "ja sam nino!"
 
 @app.route("/luka")
-def nino():
+def luka():
 	return "ja nisam nino!"
 
 if __name__ == "__main__":
