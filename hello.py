@@ -11,6 +11,10 @@ def hello():
 def env():
 	return os.getenv("MONGO_URL", "tralal")
 
+@app.route("/nino")
+def nino():
+	return "ja sam nino!"
+
 if __name__ == "__main__":
 	app.run()
 
