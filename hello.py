@@ -20,5 +20,5 @@ def luka():
 	return "ja nisam nino!"
 
 if __name__ == "__main__":
+	app.debug = True
 	app.run()
-
